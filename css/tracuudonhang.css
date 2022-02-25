@@ -1,0 +1,383 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: NunitoSanRegular;
+  background-color: #ffffff;
+}
+
+/* HEADER*/
+.menu1{
+  line-height:30px;
+  background-color:#444240;
+  color:white;
+  font-size: smaller;
+  text-align:right;
+  padding-left: 20px;
+}
+
+.menu1 a{
+  text-decoration: none;
+  color:white;
+  padding: 20px;
+}
+
+.menu1 a:hover{
+  Color:#ff6117;
+}
+
+.menu1 a img{
+  padding-top: 5px;
+  padding-right: 5px;
+  display: inline-block;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*..MENU NGANG..*/
+nav{
+  /*..position: fixed >> cố định..*/
+  width: 100%;
+  background: #273c50;
+}
+.wrapper{
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links{
+  display: inline-flex;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.desktop-item{
+  font-weight: bold;
+}
+
+.desktop-item:hover{
+  font-weight: bold;
+  color: #dd6300;
+}
+
+.search[type=text]{ /*..tìm kiếm..*/
+  width: 220px;
+  height: 40px;
+  outline: none;
+  border:1px solid rgb(185, 185, 185);
+  font-size: 10pt;
+  float: right;
+  color: #000000;
+  padding-left: 30px;
+  background-image: url(../images/icon_search.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+}
+
+.search:focus{
+  background-color: white;
+  box-shadow:0 0 8px rgb(150, 192, 231);
+  border:1px solid rgb(56, 152, 241);
+}
+
+/*..MEGA MENU..*/
+.nav-links li:hover .mega-box{
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.mega-box{
+  position: absolute;
+  left: 0;
+  width: 98.2%;
+  padding: 0px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mega-box .content{
+  background: #444240;
+  padding: 15px 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.mega-box .content .row{
+  width: calc(25% - 30px);
+  line-height: 30px;
+}
+.content .row img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .row header{
+  color: #f2f2f2;
+  font-size: 19px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.content .row .mega-links{
+  margin-top: 13px; 
+}
+
+.divider{
+  border-left: #b8b8b8 2px dashed; /*.đường sổ dọc.*/
+}
+
+.danhmuc a:hover{
+  color: #dd6300;
+}
+
+.row .mega-links li a{
+  padding: 0 20px;
+  color: #b1b1b1;
+  font-size: 15px;
+  display: block;
+}
+.row .mega-links li a:hover{
+  color: #f2f2f2;
+  background: #dd6300;
+}
+
+.content{
+  color: rgb(88, 88, 88);
+  text-align: justify;
+}
+
+.mega-links1{ /*.sản phẩm.*/
+  text-align: center;
+}
+
+.mega-links1 li a{
+  padding: 10 10px;
+  color: #b1b1b1;
+  font-size: 19px;
+  font-weight: bold;
+  display: block;
+}
+.mega-links1 li a:hover{
+  color: #dd6300;
+}
+
+.brightness{
+  filter: brightness(60%);
+  transition: all 0.5s;
+}
+
+.brightness:hover{
+  filter: brightness(100%);
+}
+
+
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #464646;
+  color: white;
+  padding-top: 60px;
+}
+
+.leftcolumn2 {
+  float: left;
+  width: 30%;
+}
+
+.leftcolumn2 img{
+  display: table;
+  clear: both;
+  padding: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.leftcolumn2 a{
+  text-decoration: none;
+  background-color: #ff6117;
+  color: #ffffff;
+  display: table;
+  clear: both;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 50px;
+}
+
+.leftcolumn2 a:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.rightcolumn2 {
+  float: right;
+  width: 70%;
+  background-color: none;
+  padding-left: 0px;
+}
+
+.footer-item {
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  display: block;
+}
+
+.footer-item a { 
+  display: block;
+  color: #cacaca;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+
+.footer-item a:hover{
+  text-decoration: none;
+  color: #ff6117;
+}
+
+.footer-item2 {
+  width: 20%;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  
+}
+
+.footer-item2 a { 
+  display: inline-block;
+  color: #cacaca;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+
+.footer-item2 a img{ 
+ width: 100%;
+}
+
+.footer-item2 a:hover{
+  text-decoration: none;
+  color: #ff6117;
+}
+
+.submit[type=email]{
+  width: 115px;
+  height: 41px;
+  outline: none;
+  border:1px solid rgb(185, 185, 185);
+  font-size: 10pt;
+  float: left;
+  color: #000000;
+}
+
+.submit:focus{
+  background-color: white;
+  box-shadow:0 0 8px rgb(150, 192, 231);
+  border:1px solid rgb(56, 152, 241);
+}
+
+.send2[type=submit]{
+  width: 49px;
+  height: 42px;
+  outline: none;
+  border:none;
+  background-image: url(../images/arrow_right.png);
+  background-color: #ff6117;
+  }
+  
+.send2:focus{
+  box-shadow:0 0 10px rgb(117, 174, 228);
+}
+
+.row-5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.item {
+  text-align: center;
+  color: #9b9b9b;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+
+
+form h1{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.form-group{
+  margin: 20px 2px;
+}
+
+.form-control[type=text]{
+  margin: 10px 2px;
+  padding: 5px;
+  border:1px solid rgb(185, 185, 185);
+  width: 450px;
+  height: 30px;
+  display: block;
+  outline: none;
+  font-size: 10pt;
+  color: #000000;
+  padding-left: 30px;
+  margin-left: 400px;
+}
+
+
+.form-control:focus{
+  background-color: white;
+  box-shadow:0 0 8px rgb(150, 192, 231);
+  border:1px solid rgb(56, 152, 241);
+}
+
+.tracuu a{
+  text-decoration: none;
+  background-color: #ff6117;
+  color: #ffffff;
+  padding: 20px;
+  margin-left: 530px;
+  margin-top: 30px;
+  margin-bottom: 140px;
+  display: table;
+  clear: both;
+  
+}
+
+.tracuu a:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/*..https://www.niemvuilaptrinh.com/article/Cach-Tao-Slideshow-Cho-Trang-Web2020..*/
